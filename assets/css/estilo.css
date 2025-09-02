@@ -37,7 +37,10 @@ box-sizing: border-box;}
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
     background-color: rgb(10, 82, 25);
+
     
 }
 
@@ -60,6 +63,7 @@ nav {
 
 }
 
+
 .logo img {
     max-width: 7dvh;
     height: auto;
@@ -69,7 +73,44 @@ nav {
     margin-left: 1.5vh;
 }
 
+.menu {
+    grid-area: menu;
+    grid-template-rows: 2fr;
+    background-color: rgb(255, 255, 255);
+}
 
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(5, 56, 8);
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10dvh;
+    border-right: 1px solid rgb(5, 56, 8);
+
+}
+
+label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+select {
+      width: 250px;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
 /* tablet*/
 
 
