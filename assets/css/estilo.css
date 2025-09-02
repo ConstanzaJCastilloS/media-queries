@@ -48,18 +48,19 @@ box-sizing: border-box;}
 nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content:flex-start;
 }
+
 
 .navbox {
-    list-style: none;
-}
-
-.navbox li p {
+     display: flex;
+    flex-direction: row;
     color: rgb(253, 253, 253);
     font-weight: bold;
     font-size:x-large;
     margin-left: 3dvh;
+    margin-top: 3dvh;
+    gap: 17dvh;
 
 }
 
@@ -75,25 +76,12 @@ nav {
 
 .menu {
     grid-area: menu;
-    grid-template-rows: 2fr;
     background-color: rgb(255, 255, 255);
-}
-
-.menu ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border-right: 1px solid rgb(5, 56, 8);
-    
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 10dvh;
+    align-items:center;
+    height: 15dvh;
     border-right: 1px solid rgb(5, 56, 8);
 
 }
@@ -111,6 +99,77 @@ select {
       border: 1px solid #ccc;
       font-size: 16px;
     }
+
+
+.main { 
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr
+    background-color: rgb(255, 255, 255);
+    overflow::backdrop;
+}
+
+.caja-producto {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 80%;
+    margin-left: 6dvh;
+    margin-bottom: 5dvh;
+}
+
+.caja-producto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+
+.texto-producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mi-boton {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(16, 80, 32); 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: background-color b 0.3s ease;
+}
+
+.mi-boton:hover {
+    background-color: #a689ee; 
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(243, 119, 243);
+}
+
+.footer li {
+    display: flex;
+    justify-content: end;
+    gap: 2%;
+    color: rgb(255, 255, 255);
+}
+
+li {
+    list-style: none;
+    padding: 1.5vh;
+    color: rgb(5, 43, 11);
+}
+
 /* tablet*/
 
 
