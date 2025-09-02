@@ -27,12 +27,11 @@ box-sizing: border-box;}
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10dvh 3fr 5dvh;
+    grid-template-rows: 15dvh 15dvh 30fr 15dvh;
     grid-template-areas:  'header'
                           'menu' 
                           'main'
                           'footer';
-    height: 100dvh;
 }
 
 .header {
@@ -40,10 +39,8 @@ box-sizing: border-box;}
     display: grid;
     grid-template-rows: 0.5fr 1fr 0.5fr;
     background-color: rgb(10, 82, 25);
-
-    
+    height: 10dvh;
 }
-
 
 nav {
     display: flex;
@@ -81,7 +78,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    height: 15dvh;
+    height: 10dvh;
     border-right: 1px solid rgb(5, 56, 8);
 
 }
@@ -103,10 +100,8 @@ select {
 
 .main { 
     grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr
     background-color: rgb(255, 255, 255);
-    overflow::backdrop;
+    overflow: backdrop;
 }
 
 .caja-producto {
@@ -131,6 +126,8 @@ select {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 2dvh;
+    margin-bottom: 2dvh;
 }
 
 .mi-boton {
@@ -152,25 +149,22 @@ select {
 .footer {
     grid-area: footer;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(243, 119, 243);
-}
-
-.footer li {
-    display: flex;
-    justify-content: end;
-    gap: 2%;
+    flex-direction: column;
+    background-color: rgb(5, 56, 8);
     color: rgb(255, 255, 255);
+    font-size: small;
+    text-align: center;
+    column-gap: 3dvh;
 }
 
-li {
-    list-style: none;
-    padding: 1.5vh;
-    color: rgb(5, 43, 11);
+.footer .redes {
+  display: flex;
+  flex-direction: row; 
+  gap: 3dvh; 
+  margin-top: 1dvh;
 }
-
-/* tablet*/
 
 
 /* pc */
