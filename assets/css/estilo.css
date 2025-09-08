@@ -203,8 +203,17 @@ h2 {
 
 .lista {
   display:list-item;
+  text-align: center;
   margin-top: 5dvh;
-  padding: 3dvh;
+  padding: 5dvh;
+}
+
+ul {
+     list-style-type: none;
+}
+
+li {
+    padding: 2dvh;
 }
 
 .menu {
@@ -241,7 +250,7 @@ select {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 60dvh;
+    height: 100dvh;
     margin-left: 5dvh;
 }
 
