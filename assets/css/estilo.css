@@ -203,18 +203,6 @@ h2 {
 }
 
 .lista {
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5dvh;    
-    font-size: large; 
-  }
-
-p {
-    padding: 3dvh;
-=======
   display:list-item;
   text-align: center;
   margin-top: 5dvh;
@@ -227,7 +215,6 @@ ul {
 
 li {
     padding: 2dvh;
->>>>>>> 321c6956215e377f6ba7b7c953a40a4b2a4e2437
 }
 
 .menu {
